@@ -1,0 +1,562 @@
+/* #id .class item */
+/*div{*/
+    /*color: red;*/
+    /*background-color: red;color name*/
+    /*background-color: rgb(0 0 0 / 50%);rgb(red green blue 50%)*//*red green blue alpha channel*/
+    /*background-color: #DD0000;color hex code*/
+    /*background-image: url("img/QD53IRV.jpg");*/
+    /*background-repeat: no-repeat;repeat repeat-y repeat-x*/
+    /*background-attachment: scroll;scroll(بدون صورة ننزل) fixed(تنزل مع الصورة) حاجز*/
+    /*background-position: 20% ;top right bottom left center (top left ...etc) || 100px 200px || 50% 30%*/
+    /*background-size: 100% 60%;cover contain || 500px 300px*/
+/*}*/
+
+/*div{
+    background-color: #DDD;
+    padding: 20px;  top right bottom left (not accepts negative) accepts %
+    margin: 10px;  accepts negative accepts % 
+    width: 300px;
+    margin-left: 15%;
+    border: 10px solid red;
+    border-color: red green black blue;
+    outline: 10px solid gold; /* outitem 
+    border-radius: 20px;
+}*/
+
+/*
+Block => div
+- take full width if no width
+- add line break
+- respect padding, margin, width, height
+inline => span
+- do not respect width, height
+- do not add line break
+- respect padding and margin [just left + right]
+inline-block
+- respect padding, margin, width, height
+- allow elements before and after it
+*/
+
+/*div{
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px;
+}*/
+
+/*span{
+    background-color: #EEE;
+    padding: 20px;
+    margin: 20px;
+}*/
+
+/*span{
+    background-color: #EEE;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+}*/
+
+/*div{
+    background-color: red;
+    margin: 10px 0;
+    display: none;
+}*/
+/*.first{
+    display: none; يخفي كامل*/
+    /*visibility: hidden; يخفي ويحجز مكانه 
+}*/
+/*
+.one{
+    border-bottom: 2px solid red;
+    color: red;
+}
+.two{
+    border-bottom: 2px solid green;
+    color: green;
+}
+.three{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.four{
+    border-bottom: 2px solid black;
+    color: black;
+}
+p{
+    border-bottom: 2px solid gray;
+    color: gray;
+}
+
+.one,.two,.three,.four,p{
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #EDEDED;
+}
+*/
+/*div p{
+    color: red;
+}
+p{
+    color: blue;
+}
+div .special{
+    color: gray;
+}*/
+/*div{
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 40px;
+    max-height: 50px;
+    width: fit-content;
+}*/
+/*div{
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}*/
+/* text-shadow: H-shadow V-shadow Blur color */
+/*div{
+    background-color: #f9f9f9;
+    color: rebeccapurple;
+    text-shadow: 2px 2px 2px red;
+}*/
+/*div img{
+    background-color: #f9f9f9;
+    text-align: center;
+    direction: ltr;
+    vertical-align: middle;
+}*/
+/* text decoration / text transformation */
+/*div{
+    background-color: #f9f9f9;
+    text-decoration: line-through;
+}
+a{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+}
+p{
+    background-color: #f9f9f9;
+    text-transform: capitalize;
+}*/
+/* letter spacing / text-indent(بداية الكلمة بهمل ازاحة) / line-height(البعد بين كل خط) / word-spacing */
+/*div{
+    background-color: #d8d8d8;
+    letter-spacing: 2px;
+    text-indent: 20px;
+    line-height: 1.6;
+    word-spacing: 15px;
+    width: 300px;
+    white-space: nowrap;
+}*/
+/* text overflow */
+/*div{
+    background-color: #ddd;
+    padding: 10px;
+    width: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+/* inheritance */
+/*body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+div p{
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+}*/
+/* font family */
+/*.with-ser{
+    font-family: 'Times New Roman', Times, serif;
+}
+.san-ser{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.with-ser,
+.san-ser{
+    background-color: #ddd;
+    padding: 10px;
+}*/
+/* css units / px, em, rem, vw, percentage | read / vmin, vh*/
+/*div{
+    font-size: 20px;
+}
+
+div span{
+    font-size: 2em;
+}*/
+/* font style / fonr weight*/
+/*div{
+    font-style: oblique;
+    font-weight: 700;
+}
+p{
+    text-transform: uppercase;
+}*/
+/* mouse cursor */
+/*button{
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+span{
+    cursor: move;
+}
+p{
+    cursor: grab;
+}*/
+/* Float | Clear */
+/*.parent{
+    background-color: red;
+    padding: 10px;
+}
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    display: inline-block;
+    width: 25%;
+    float: left;
+}
+.clear{
+    clear: both;
+}*/
+/* Calc */
+/*body{
+    margin: 0;
+}
+div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    display: inline-block;
+    width: calc(88% / 5);
+    margin-left: 2%;
+    float: left;
+}*/
+/* Opacity */
+/*.one{
+    background-color: red;
+    opacity: 0.5;
+}
+.two{
+    background-color: rgba(255 0 0 / 0.1);
+}*/
+/* Position -> static=>Default / Relative / Absolute / Fixed / Sticky */
+/*body{
+    min-height: 5000px;
+}
+div{
+    padding: 10px;
+    width: 100px;
+    color: white;
+}
+.one{
+    background-color: red;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+.two{
+    background-color: green;
+}
+.three{
+    background-color: aqua;
+    position: absolute;
+}
+.four{
+    background-color: blue;
+}
+p{
+    background-color: antiquewhite;
+    margin: 40px;
+    position: fixed;
+}
+span{
+    background-color: bisque;
+    margin: 200px;
+    position: sticky;
+    top: 20px;
+}*/
+/* z-index */
+/*div{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+.one{
+    background-color: red;
+    left: 40px;
+    top: 280px;
+    z-index: 3;
+}
+.two{
+    background-color: green;
+    left: 30px;
+    top: 265px;
+    z-index: 2;
+}
+.three{
+    background-color: blue;
+}*/
+/* lists styling */
+/*ul{
+    list-style: circle inside url(img/QD53IRV.jpg);
+}
+li{
+    background-color: #EEE;
+    margin-bottom: 20px;
+}*/
+/* table styling */
+/*body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+}
+table td{
+    padding: 15px;
+    background-color: #EEE;
+    border: 1px solid #e2e2e2;
+}
+table thead td{
+    background-color: #f44336;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-color: #f35246;
+}*/
+/* pseudo classes */
+/*.one{
+    background-color: red;
+    color: white;
+}
+.two{
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+p{
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.ch:checked{
+    color: red;
+    display: none;
+}
+a:visited{
+    color: blue;
+}
+:empty{
+    border: 10px solid red;
+}
+.in{
+    border: 2px solid black;
+}
+.in:focus{
+    border-color: red;
+    outline: none;
+}*/
+/* Pseudo Elements -First Letter, First Line, Selection */
+/*
+.one span{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.two::first-letter{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.three::first-line{
+    font-weight: bold;
+    color: green;
+}
+.four::selection{
+    background-color: black;
+    color: yellow;
+}
+*/
+
+/* Pseudo Elements -Before,After,Content */
+/*.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.one{
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.one::before{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}
+
+.one::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.user{
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    margin: 20px 0;
+}
+
+/*.one .pipeline{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: #009688;
+}*/
+/*.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: members-counter;
+    
+}
+.one{
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.one::before{
+    content: attr(data-text);
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}
+.one::after{
+    content: counter(members-counter);
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.user{
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    margin: 20px 0;
+}
+
+ul{
+    list-style: none;
+
+}
+ul li{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+ul li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}*/
+/* Vendor Prefixes */
